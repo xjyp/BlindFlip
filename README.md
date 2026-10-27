@@ -49,29 +49,6 @@ blindflip actions --target B
 The output portfolio is frozen before evaluation. A target judge is never used
 to revise action identities or ordering.
 
-## Calibrate and Evaluate
-
-```bash
-export SOURCE_MODEL=/path/to/source/checkpoint
-blindflip calibrate --backend vllm --model "$SOURCE_MODEL" \
-  --data data/llmbar_calibration_224_seed43.json \
-  --seed 43 --max-model-len 8192 --trust-remote-code \
-  --out outputs/source_calibration
-
-blindflip select --matrix outputs/source_calibration/matrix.json --budget 10 \
-  --out outputs/source_portfolio.json
-
-export TARGET_MODEL=/path/to/target/checkpoint
-blindflip evaluate --backend vllm --model "$TARGET_MODEL" \
-  --portfolio outputs/source_portfolio.json --data data/mtbench_test.json \
-  --budgets 2,3,5,10 --max-model-len 8192 --trust-remote-code \
-  --out outputs/target_mtbench
-```
-
-For a compatible chat-completions service, set `BLINDFLIP_API_KEY` and pass a
-credential-free endpoint with `--api-url`. The key is read only from the
-environment and is not stored in run manifests.
-
 ## Metrics
 
 ASR@K is the fraction of clean-valid comparisons reversed by at least one of
