@@ -1,0 +1,62 @@
+{
+  "llmbar_calibration_224_seed43.json": {
+    "items": 224,
+    "sha256": "f47faf5993d9c6f2aeda9ceb2eb058cd28965b71046ebc0fb1b9b3caacaa7818",
+    "original_file": "data/llmbar_train.json",
+    "original_sha256": "6459ee12969eb1cdf2a475be362e188453984885ae90ea99e8e008d5a0b40e5f",
+    "exported_fields": [
+      "question_id",
+      "instruction",
+      "response_a",
+      "response_b"
+    ]
+  },
+  "llmbar_test.json": {
+    "items": 224,
+    "sha256": "a0b1ef0babcebde975bf0fe2583d26a9263a75b4cea52474ab7dfa239ae51d06",
+    "original_file": "data/llmbar_test.json",
+    "original_sha256": "34d8094c963b2076368312a94c618f53a872accf1813de58364d5cfb2b0191a3",
+    "exported_fields": [
+      "question_id",
+      "instruction",
+      "response_a",
+      "response_b"
+    ]
+  },
+  "mtbench_test.json": {
+    "items": 224,
+    "sha256": "0ac2cf2904f60f5a20382a03e9aa3cc58ffef0cf5b9b5ed4069d47e45557b803",
+    "original_file": "mtbench_test.json",
+    "original_sha256": "c172d2968f2874667e59431aae9608e9ddac95fd92df96d6ecfa02e6c8a65c20",
+    "exported_fields": [
+      "question_id",
+      "instruction",
+      "response_a",
+      "response_b"
+    ]
+  },
+  "alpaca_eval_test.json": {
+    "items": 161,
+    "sha256": "7af32db93ca7ff5456a8de0472cfc7ac775c2b1ac82dd9b0ae87b7695b419263",
+    "original_file": "data/alpaca_eval_test.json",
+    "original_sha256": "2973ad12675caff285b0545170cd9460be79e87134351af2758215a37a57cabe",
+    "exported_fields": [
+      "question_id",
+      "instruction",
+      "response_a",
+      "response_b"
+    ]
+  },
+  "arena_hard_test.json": {
+    "items": 150,
+    "sha256": "46142c5ec3f766aeeee5929f9d8ab8ff90384ec972e0319efcae52be6ac87a32",
+    "original_file": "data/arena_hard_test.json",
+    "original_sha256": "4164be01d173c2b1dd326bc53a5670bac920c695ed7585212834e2a37811c9c7",
+    "exported_fields": [
+      "question_id",
+      "instruction",
+      "response_a",
+      "response_b"
+    ]
+  }
+}

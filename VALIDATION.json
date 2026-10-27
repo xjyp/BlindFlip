@@ -1,0 +1,11 @@
+{
+  "rendered_note_parity_checks": 132,
+  "prompt_parity_checks": 3,
+  "parser_parity_checks": 13,
+  "selector_parity_checks": 396,
+  "selector_calibrations": 6,
+  "selector_budgets": "1 through 66",
+  "data_files_verified": 5,
+  "secret_scan": "Passed allowlist file scan; no key-like strings or private key blocks found",
+  "gpu_or_remote_api_experiments_rerun": false
+}
